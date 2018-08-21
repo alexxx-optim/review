@@ -1,0 +1,47 @@
+entity.alexxx_review.canonical:
+  path: '/alexxx_review/{alexxx_review}'
+  defaults:
+    _entity_view: 'alexxx_review'
+    _title: 'Alexxx review Content'
+  requirements:
+    _entity_access: 'alexxx_review.view'
+
+entity.alexxx_review.collection:
+  path: '/alexxx_review/list'
+  defaults:
+    _entity_list: 'alexxx_review'
+    _title: 'Alexxx review entity List'
+  requirements:
+    _permission: 'view alexxx_review entity'
+
+entity.alexxx_review.add:
+  path: '/alexxx_review/add'
+  defaults:
+    _entity_form: alexxx_review.add
+    _title: 'Add alexxx review content'
+  requirements:
+    _entity_create_access: 'alexxx_review'
+
+entity.alexxx_review.edit_form:
+  path: '/alexxx_review/{alexxx_review}/edit'
+  defaults:
+    _entity_form: alexxx_review.edit
+    _title: 'Edit alexxx review content'
+  requirements:
+    _entity_access: 'alexxx_review.edit'
+
+entity.alexxx_review.delete_form:
+  path: '/alexxx_review/{alexxx_review}/delete'
+  defaults:
+    _entity_form: alexxx_review.delete
+    _title: 'Delete alexxx review content'
+  requirements:
+    _entity_access: 'alexxx_review.delete'
+
+entity.alexxx_review.settings:
+  path: 'admin/structure/alexxx_review_settings'
+  defaults:
+    _form: '\Drupal\alexxx_review\Form\AlexxxReviewSettingsForm'
+    _title: 'Alexxx review entity Settings'
+  requirements:
+    _permission: 'administer alexxx_review entity'

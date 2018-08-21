@@ -1,0 +1,12 @@
+# Define the menu links for this module
+
+entity.alexxx_review.collection:
+  title: 'Content Alexxx Entity: content Listing'
+  route_name: entity.alexxx_review.collection
+  description: 'List entitys'
+  weight: 10
+entity.alexxx_review.admin.structure.settings:
+  title: Alexxx Entity Settings
+  description: 'Configure Alexxx entity'
+  route_name:  entity.alexxx_review.settings
+  parent: system.admin_structure

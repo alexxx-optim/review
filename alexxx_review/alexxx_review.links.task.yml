@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+entity.alexxx_review.settings_tab:
+  route_name: alexxx_review.term_settings
+  title: Settings
+  base_route: alexxx_review.term_settings
+
+entity.alexxx_review.view:
+  route_name: entity.alexxx_review.canonical
+  base_route: entity.alexxx_review.canonical
+  title: View
+
+entity.alexxx_review.page_edit:
+  route_name: entity.alexxx_review.edit_form
+  base_route: entity.alexxx_review.canonical
+  title: Edit
+
+entity.alexxx_review.delete_confirm:
+  route_name:  entity.alexxx_review.delete_form
+  base_route:  entity.alexxx_review.canonical
+  title: Delete
+  weight: 10

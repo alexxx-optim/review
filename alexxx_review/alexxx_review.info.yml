@@ -1,0 +1,5 @@
+name: "Alexxx review"
+description: "Test task for my review."
+package: Alexxx
+type: module
+core: '8.x'

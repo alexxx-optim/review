@@ -1,0 +1,11 @@
+# All action links for this module
+
+alexxx_review._term_add:
+  # Which route will be called by the link
+  route_name: entity.alexxx_review.add
+  title: 'Add item'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.alexxx_review.collection
+    - entity.alexxx_review.canonical
